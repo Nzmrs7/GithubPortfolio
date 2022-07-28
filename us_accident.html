@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Accident Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Nurzahidah</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="supermarket.html">SUPERMARKET ANALYSIS</a></li>
+							<li><a href="video-games.html">VIDEO GAMES ANALYSIS</a></li>
+							<li class="active"><a href="us_accident.html">ACCIDENT ANALYSIS</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/nurzahidahmohamadrasidi7/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+
+									<h1>ACCIDENT<br />
+									ANALYSIS</h1>
+									<!-- <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									amet nullam sed etiam veroeros.</p> -->
+								</header>
+								<div class="image main"><img src="images/accident/highway.jpg" alt=""  /></div>
+								<p>
+									Today we are going to explore a dataset that I got from <a href="https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents" target=”_blank”>Kaggle</a> on US Accidents (2016-2021). I am using SQL to explore this dataset and few factors that I am exploring are year, date, hour, weather condition, state and visibilty of the accident. Then I will join the dataset with <a href="https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021" target=”_blank”>US Holiday Dates (2004 - 2021) </a> from Kaggle to investigate whether holidays contribute to the total amount of accidents. <br>
+									
+								</p>
+
+
+								<p>
+									<div class="table-accident" >
+										<img src="images/accident/year.PNG" alt="Months of Accident"  /> 
+										<img src="images/accident/months.PNG" alt="Months of Accident" />
+										<img src="images/accident/Date.PNG" alt="">
+										
+									</div>
+									<br>
+	
+									As we can see here, the total amount of accidents keep on increasing each year especially in year 2020 where it is almost triple of 2019. This could be because of the COVID-19 pandemic, people are taking less public transport in fear of contracting the virus. Besides that, we can see the month with highest accident is December, followed by November and October. The top 5 date with highest number of accidents all occured on December 2021. 
+								</p>
+
+								<p>
+									<div class="table-accident" >
+										<img src="images/accident/hour.PNG" alt="">
+									</div>
+
+									<p>
+										<br>
+										The hour with most accident occured are from 2pm to 6pm. This could be because more people are on  the road at these time as it is rush hour. Accident most occured at 5pm as this is usually the time where people are getting back from their work en route to their house. 
+	
+									</p>
+								</p>
+								
+
+								<div class="table-accident" >
+									<img src="images/accident/holiday accident.PNG" alt="">
+								</div>
+
+
+								<p>
+									<br>
+									After joining US Holiday Dates (2004 - 2021) dataset using SQL, it is seen that holidays that are on December such as Christmas Eve and New Year's Eve and Thanksgiving Eve and Veterans Day which are in November has the highest number of accidents. Hence, this support the data that most accident occur on November and December as previously mentioned.
+								</p>
+
+								<p>
+									<div class="table-accident" >
+										<img src="images/accident/weather.PNG" alt="Months of Accident"  /> 
+										<img src="images/accident/visibility.PNG" alt="Months of Accident" />
+									</div>
+
+									<p>
+										<br>
+										It seems that weather does not influence the cause of accident as <b>Fair</b> has the highest number of accident. In addition, even with good visibility accident still occur. This could be during these condition, more people are confident to drive in such condition, hence there will be more drivers on the road. 
+										
+									</p>
+
+									<p>
+										Other factors that may contribute to accident are the Point of Interest (POI) of the road such as presence of facilities or amenities such as zebra crossing. From the data, road that has crossing, junction and traffic signal has about 10% accident occured around them. This is because these type of POI need the driver to slow down or stop their car and if they failed to do so, they are highly inclined to be involved in an accident.
+									</p>
+
+									<h3>Conclusion</h3>
+									<ul>
+										<li>The total number of accident are increasing from year 2016 to 2021</li>
+										<li>December and November has the highest amount of accident occured </li>
+										<li>Most accident occur during rush hour especially around 5pm </li>
+										<li>Holiday with the most accident are Christmas Eve, Thanksgiving Eve and New Year's Eve, which are all in December and November</li>
+										<li>Bad weather and visibility does not affect the amount of accident as most of them occured at Fair weather with good visibility</li>
+										<li>Road with POI that need the driver to slow down or stop such as crossing has the highest number of accident occured</li>
+										
+
+									</ul>
+
+									<br>You can find my jupyter file <a href="https://github.com/Nzmrs7/nurzahidahportfolio/blob/main/Document/US%20Accident.ipynb">here</a>.
+
+
+
+
+								</p>
+
+								
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer> -->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Nurzahidah Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
